@@ -1,0 +1,18 @@
+.container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "sbox1 sbox2 sbox3 side" "main main main side" "footer footer footer footer";
+}
+.container > * {
+  border: 1px solid blue;
+  background-color: greenyellow;
+  padding: 10px;
+}
+.container__header {
+  grid-area: header;
+}
+.container__header--sbox {
+  grid-area: sbox;
+}
